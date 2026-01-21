@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Professionnel – Samuel Luange</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <!-- html2pdf pour export PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+  <!-- CV Principal -->
+  <div class="cv-container" id="cv">
+
+    <!-- EN-TÊTE / PROFIL -->
+    <header class="cv-header text-white p-4 p-md-5 d-flex align-items-center gap-4">
+      <div class="photo-wrapper">
+        <img src="photo.jpg" class="profile-photo" alt="Photo de profil">
+      </div>
+      <div class="header-info">
+        <h1 class="header-name">Samuel <span class="accent">Luange</span></h1>
+        <p class="header-title">Professionnel Polyvalent</p>
+        <div class="header-contact">
+          <p><i class="fa-solid fa-location-dot"></i> Kinshasa, République Démocratique du Congo</p>
+          <p><i class="fa-solid fa-phone"></i> <a href="tel:+243846915132" style="color: inherit; text-decoration: none;">+243 846 915 132</a> - <a href="tel:+243970338743" style="color: inherit; text-decoration: none;">970 338 743</a></p>
+          <p><i class="fa-solid fa-envelope"></i> <a href="mailto:luangesamuel23@gmail.com" style="color: inherit; text-decoration: none;">luangesamuel23@gmail.com</a> </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- PROFIL PROFESSIONNEL -->
+    <section class="section px-4 px-md-5 py-4">
+      <h2 class="section-title">
+        <i class="fa-solid fa-user"></i> Profil Professionnel
+      </h2>
+      <p class="section-text">
+        Professionnel polyvalent avec une formation en commerce et gestion, renforcée par des compétences en
+        informatique. Expérience pratique en service client, administration et restauration. Réactif, fiable et motivé
+        par l’amélioration continue et la satisfaction client.
+      </p>
+    </section>
+
+    <!-- COMPÉTENCES PRINCIPALES -->
+    <section class="section section-alt px-4 px-md-5 py-4">
+      <h2 class="section-title">
+        <i class="fa-solid fa-star"></i> Compétences Principales
+      </h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h4>Service & Accueil</h4>
+          <p>Accueil professionnel, relation client, service en restaurant</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fa-solid fa-folder"></i>
+            <i class="fa-solid fa-keyboard"></i>
+          </div>
+
+          <h4>Gestion & Saisie</h4>
+          <p>Gestion de dossiers, saisie de données, traitement administratif</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fa-solid fa-coins"></i>
+          </div>
+          <h4>Caisse & Comptabilité</h4>
+          <p>Gestion de caisse, classement de documents, suivi comptable</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon dual-icon">
+            <i class="fa-solid fa-code"></i>
+            <i class="fa-solid fa-server"></i>
+          </div>
+          <h4>Développement Web</h4>
+          <p>HTML, CSS, JavaScript, PHP, Laravel, Responsive Design, Frontend & Backend</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fa-brands fa-microsoft"></i>
+          </div>
+          <h4>Bureautique</h4>
+          <p>Microsoft Word, Excel, Pack Office, outils collaboratifs</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <h4>Soft Skills</h4>
+          <p>Communication, travail en équipe, adaptabilité, initiative</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMATION & CERTIFICATION -->
+    <section class="section section-alt px-4 px-md-5 py-4">
+      <h2 class="section-title">
+        <i class="fa-solid fa-graduation-cap"></i> Formation & Certification
+      </h2>
+      <div class="formations-grid">
+        <div class="formation-item">
+          <div class="formation-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3>Web Master</h3>
+          <p class="formation-school">INPP - Kinshasa</p>
+          <p class="formation-desc">Formation complète en développement web et gestion de sites internet. Maîtrise des
+            technologies modernes.</p>
+          <span class="formation-level">Avancé</span>
+        </div>
+
+        <div class="formation-item">
+          <div class="formation-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>Développement Web</h3>
+          <p class="formation-school">Openclassroom - En ligne</p>
+          <p class="formation-desc">Formation complète HTML, CSS, JavaScript et frameworks modernes. Responsive Design
+          </p>
+          <span class="formation-level">Intermédiaire</span>
+        </div>
+
+        <div class="formation-item">
+          <div class="formation-icon">
+            <i class="fa-solid fa-hard-hat"></i>
+          </div>
+          <h3>Local Développement Construction (LDC)</h3>
+          <p class="formation-school">Les Témoins de Jéhovah</p>
+          <p class="formation-desc">Formation pratique en construction et développement. Compétences en gestion de
+            projet et travail d'équipe.</p>
+          <span class="formation-level">Certifié</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPÉRIENCE PROFESSIONNELLE -->
+    <section class="section px-4 px-md-5 py-4">
+      <h2 class="section-title">
+        <i class="fa-solid fa-briefcase"></i> Expérience Professionnelle
+      </h2>
+      <div class="experience-timeline">
+        <div class="experience-item">
+          <div class="experience-header">
+            <h3>Stagiaire - CNSS</h3>
+            <span class="experience-date">Stage Académique</span>
+          </div>
+          <p class="experience-company">Caisse Nationale de Sécurité Sociale - Kinshasa</p>
+          <ul class="experience-tasks">
+            <li>Classement et archivage de dossiers administratifs</li>
+            <li>Saisie et traitement de données comptables</li>
+            <li>Support aux équipes comptables et administratives</li>
+            <li>Respect des procédures et normes de confidentialité</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <h3>Agent de Service & Accueil</h3>
+            <span class="experience-date">Expérience variée</span>
+          </div>
+          <p class="experience-company">Secteur Hôtellerie & Restauration</p>
+          <ul class="experience-tasks">
+            <li>Accueil professionnel et assistance des visiteurs/clients</li>
+            <li>Communication efficace et relations interpersonnelles</li>
+            <li>Disponibilité et polyvalence dans les tâches assignées</li>
+            <li>Respect des normes de service client et d'hygiène</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <h3>Assistant Comptable / Caissier</h3>
+            <span class="experience-date">Expérience professionnelle</span>
+          </div>
+          <p class="experience-company">Divers secteurs administratifs</p>
+          <ul class="experience-tasks">
+            <li>Gestion des opérations de caisse</li>
+            <li>Pointage et contrôle d'encaissement</li>
+            <li>Classement et archivage de documents</li>
+            <li>Support administratif général</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- LANGUES & COMPÉTENCES LINGUISTIQUES -->
+    <section class="section px-4 px-md-5 py-4">
+      <h2 class="section-title">
+        <i class="fa-solid fa-language"></i> Langues
+      </h2>
+      <div class="languages-grid">
+        <div class="language-item">
+          <h3>Français</h3>
+          <div class="proficiency-bar">
+            <div class="proficiency-level" style="width: 90%"></div>
+          </div>
+          <p class="proficiency-text">Bon niveau - Courant</p>
+        </div>
+
+        <div class="language-item">
+          <h3>Lingala</h3>
+          <div class="proficiency-bar">
+            <div class="proficiency-level" style="width: 95%"></div>
+          </div>
+          <p class="proficiency-text">Excellent - Langue maternelle</p>
+        </div>
+
+        <div class="language-item">
+          <h3>Anglais</h3>
+          <div class="proficiency-bar">
+            <div class="proficiency-level" style="width: 60%"></div>
+          </div>
+          <p class="proficiency-text">Niveau basique</p>
+        </div>
+
+        <div class="language-item sign-language">
+          <h3><i class="fa-solid fa-hands"></i> LSC Congolaise</h3>
+          <div class="proficiency-bar">
+            <div class="proficiency-level" style="width: 85%"></div>
+          </div>
+          <p class="proficiency-text">Langue des signes Congolaise</p>
+        </div>
+
+        <div class="language-item sign-language">
+          <h3><i class="fa-solid fa-hands"></i> ASL Américaine</h3>
+          <div class="proficiency-bar">
+            <div class="proficiency-level" style="width: 70%"></div>
+          </div>
+          <p class="proficiency-text">American Sign Language</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATOUTS & QUALITÉS -->
+    <section class="section section-alt px-4 px-md-5 py-4">
+      <h2 class="section-title">
+        <i class="fa-solid fa-heart"></i> Atouts & Qualités
+      </h2>
+      <div class="atouts-grid">
+        <div class="atout-item">
+          <div class="atout-icon">
+            <i class="fa-solid fa-check-circle"></i>
+          </div>
+          <h3>Sérieux & Fiable</h3>
+          <p>Professionnel, digne de confiance, respectueux des délais et des engagements</p>
+        </div>
+
+        <div class="atout-item">
+          <div class="atout-icon">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <h3>Rapide d'Apprentissage</h3>
+          <p>Capacité adaptative, curiosité intellectuelle, maîtrise rapide de nouveaux outils</p>
+        </div>
+
+        <div class="atout-item">
+          <div class="atout-icon">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <h3>Disponibilité</h3>
+          <p>Prêt à commencer immédiatement, flexible selon les besoins de l'entreprise</p>
+        </div>
+
+        <div class="atout-item">
+          <div class="atout-icon">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <h3>Travail en Équipe</h3>
+          <p>Excellent relationnel, esprit collaboratif, communication fluide avec les collègues</p>
+        </div>
+
+        <div class="atout-item">
+          <div class="atout-icon">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <h3>Polyvalence</h3>
+          <p>Compétences diversifiées, capacité à gérer plusieurs domaines simultanément</p>
+        </div>
+
+        <div class="atout-item">
+          <div class="atout-icon">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+          <h3>Initiatif & Proactif</h3>
+          <p>Prend des initiatives, propose des améliorations, résout les problèmes de manière autonome</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOMAINES D'EXPERTISE -->
+    <section class="section px-4 px-md-5 py-4">
+      <h2 class="section-title">
+        <i class="fa-solid fa-chart-line"></i> Domaines d'Expertise
+      </h2>
+      <div class="expertise-container">
+        <div class="expertise-category">
+          <h3 class="expertise-title">Informatique & Web</h3>
+          <ul class="expertise-list">
+            <li>Développement Frontend : HTML5, CSS3, JavaScript moderne</li>
+            <li>Développement Backend : PHP, Laravel</li>
+            <li>Responsive Web Design (Mobile-First)</li>
+            <li>Frameworks: Bootstrap, Tailwind CSS, Laravel</li>
+            <li>Design d'interface utilisateur (UI/UX)</li>
+            <li>Optimisation de performance web</li>
+            <li>Gestion de contenu et CMS</li>
+            <li>Architecture MVC et patterns de développement</li>
+          </ul>
+        </div>
+        <div class="expertise-category">
+          <h3 class="expertise-title">Administration & Gestion</h3>
+          <ul class="expertise-list">
+            <li>Gestion administrative et comptable</li>
+            <li>Traitement et archivage de dossiers</li>
+            <li>Saisie et organisation de données</li>
+            <li>Support administratif généraliste</li>
+            <li>Respect des normes de confidentialité</li>
+            <li>Gestion de dossiers clients</li>
+          </ul>
+        </div>
+        <div class="expertise-category">
+          <h3 class="expertise-title">Service Client & Accueil</h3>
+          <ul class="expertise-list">
+            <li>Accueil professionnel et courtoisie</li>
+            <li>Communication client efficace</li>
+            <li>Gestion des réclamations</li>
+            <li>Service en restauration & hôtellerie</li>
+            <li>Satisfaction client</li>
+            <li>Relations interpersonnelles</li>
+          </ul>
+        </div>
+        <div class="expertise-category">
+          <h3 class="expertise-title">Outils Informatiques</h3>
+          <ul class="expertise-list">
+            <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+            <li>Google Workspace (Docs, Sheets, Drive)</li>
+            <li>Outils collaboratifs modernes</li>
+            <li>Édition et mise en page de documents</li>
+            <li>Tableaux et bases de données simples</li>
+            <li>Navigateurs et applications web</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- RÉALISATIONS & PROJETS -->
+    <section class="section section-alt px-4 px-md-5 py-4">
+      <h2 class="section-title">
+        <i class="fa-solid fa-star"></i> Réalisations & Projets
+      </h2>
+      <div class="realisations-list">
+        <div class="realisation-item">
+          <div class="realisation-header">
+            <h3>Création de Site Web Responsive</h3>
+            <span class="realisation-tag">Web Design</span>
+          </div>
+          <p class="realisation-desc">Conception et développement d'un site web moderne, responsive et optimisé pour
+            tous les appareils. Intégration de design professionnel avec HTML5 et CSS3.</p>
+          <div class="realisation-skills">
+            <span class="skill-badge">HTML5</span>
+            <span class="skill-badge">CSS3</span>
+            <span class="skill-badge">Responsive</span>
+            <span class="skill-badge">UI/UX</span>
+          </div>
+        </div>
+
+        <div class="realisation-item">
+          <div class="realisation-header">
+            <h3>Développement Application Web Backend</h3>
+            <span class="realisation-tag">Backend</span>
+          </div>
+          <p class="realisation-desc">Développement d'applications web complètes utilisant PHP et le framework Laravel. Architecture MVC, gestion de bases de données, authentification utilisateur.</p>
+          <div class="realisation-skills">
+            <span class="skill-badge">PHP</span>
+            <span class="skill-badge">Laravel</span>
+            <span class="skill-badge">MVC</span>
+            <span class="skill-badge">MySQL</span>
+          </div>
+        </div>
+
+        <div class="realisation-item">
+          <div class="realisation-header">
+            <h3>Création de Site Web Responsive</h3>
+            <span class="realisation-tag">Web Design</span>
+          </div>
+          <p class="realisation-desc">Conception et développement d'un site web moderne, responsive et optimisé pour
+            tous les appareils. Intégration de design professionnel avec HTML5 et CSS3.</p>
+          <div class="realisation-skills">
+            <span class="skill-badge">HTML5</span>
+            <span class="skill-badge">CSS3</span>
+            <span class="skill-badge">Responsive</span>
+            <span class="skill-badge">UI/UX</span>
+          </div>
+        </div>
+
+        <div class="realisation-item">
+          <div class="realisation-header">
+            <h3>Gestion de Projet Administrative</h3>
+            <span class="realisation-tag">Administration</span>
+          </div>
+          <p class="realisation-desc">Coordination de tâches administratives complexes, organisation de documents, suivi
+            de dossiers clients et amélioration des processus internes. Augmentation de l'efficacité de 25%.</p>
+          <div class="realisation-skills">
+            <span class="skill-badge">Organisation</span>
+            <span class="skill-badge">Gestion Dossiers</span>
+            <span class="skill-badge">Processus</span>
+            <span class="skill-badge">Conformité</span>
+          </div>
+        </div>
+
+        <div class="realisation-item">
+          <div class="realisation-header">
+            <h3>Amélioration du Service Client</h3>
+            <span class="realisation-tag">Service</span>
+          </div>
+          <p class="realisation-desc">Mise en place de standards de qualité dans l'accueil et le service. Formation des
+            équipes aux bonnes pratiques de relation client et satisfaction utilisateur.</p>
+          <div class="realisation-skills">
+            <span class="skill-badge">Communication</span>
+            <span class="skill-badge">Formation</span>
+            <span class="skill-badge">Qualité</span>
+            <span class="skill-badge">Satisfaction</span>
+          </div>
+        </div>
+
+        <div class="realisation-item">
+          <div class="realisation-header">
+            <h3>Développement Multilingue</h3>
+            <span class="realisation-tag">Spécialité</span>
+          </div>
+          <p class="realisation-desc">Maîtrise de plusieurs langues incluant français, lingala, anglais et langues de
+            signes (LSC et ASL). Capacité à communiquer avec des publics variés et incluants.</p>
+          <div class="realisation-skills">
+            <span class="skill-badge">Français</span>
+            <span class="skill-badge">Lingala</span>
+            <span class="skill-badge">LSC/ASL</span>
+            <span class="skill-badge">Inclusion</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & DISTINCTIONS -->
+    <section class="section px-4 px-md-5 py-4">
+      <h2 class="section-title">
+        <i class="fa-solid fa-medal"></i> Certifications & Distinctions
+      </h2>
+      <div class="certifications-grid">
+        <div class="certification-item">
+          <div class="certification-icon">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <h3>Web Master Certifié</h3>
+          <p class="cert-institution">INPP - Kinshasa</p>
+          <p class="cert-date">Formation complète 2024</p>
+          <p class="cert-details">Développement web professionnel, gestion de sites internet, technologies modernes.</p>
+        </div>
+
+        <div class="certification-item">
+          <div class="certification-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>Développement Web</h3>
+          <p class="cert-institution">Openclassrooms - En ligne</p>
+          <p class="cert-date">Formation continue</p>
+          <p class="cert-details">HTML, CSS, JavaScript, frameworks modernes et responsive design.</p>
+        </div>
+
+        <div class="certification-item">
+          <div class="certification-icon">
+            <i class="fa-solid fa-hard-hat"></i>
+          </div>
+          <h3>Développement Local (LDC)</h3>
+          <p class="cert-institution">Les Témoins de Jéhovah</p>
+          <p class="cert-date">Certification pratique</p>
+          <p class="cert-details">Construction, gestion de projet, travail d'équipe et leadership.</p>
+        </div>
+
+        <div class="certification-item">
+          <div class="certification-icon">
+            <i class="fa-solid fa-chart-bar"></i>
+          </div>
+          <h3>Compétences Transversales</h3>
+          <p class="cert-institution">Expérience Professionnelle</p>
+          <p class="cert-date">Reconnues & Éprouvées</p>
+          <p class="cert-details">Gestion administrative, comptabilité, relations client, polyvalence.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO & LIENS -->
+    <section class="section section-alt px-4 px-md-5 py-4">
+      <h2 class="section-title">
+        <i class="fa-solid fa-link"></i> Portfolio & Disponibilité
+      </h2>
+      <div class="portfolio-container">
+        <div class="portfolio-item">
+          <div class="portfolio-icon">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <h3>Portfolio Web</h3>
+          <p>Consultez mes projets web et réalisations techniques à l'adresse ci-dessous :</p>
+          <p class="portfolio-link"><a href="https://samgyver-web-creation.netlify.app/" target="_blank" style="color: inherit; text-decoration: none;">samgyver-web-creation.netlify.app</a></p>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-icon">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <h3>Disponibilité</h3>
+          <p><strong>Statut :</strong> Disponible immédiatement</p>
+          <p><strong>Mobilité :</strong> Flexible selon l'opportunité</p>
+          <p><strong>Type :</strong> CDI, CDD, Stage, Freelance</p>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-icon">
+            <i class="fa-solid fa-phone-volume"></i>
+          </div>
+          <h3>Me Contacter</h3>
+          <p><strong>Téléphone :</strong> <a href="tel:+243970338743" style="color: inherit; text-decoration: none;">+243 970 338 743</a></p>
+          <p><strong>WhatsApp :</strong><a href="tel:+243846915132" style="color: inherit; text-decoration: none;">+243 846 915 132</a></p>
+          <p><strong>Email :</strong> <a href="mailto:luangesamuel23@gmail.com" style="color: inherit; text-decoration: none;">luangesamuel23@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RÉFÉRENCES -->
+    <section class="section px-4 px-md-5 py-4">
+      <h2 class="section-title">
+        <i class="fa-solid fa-star-half"></i> Références Professionnelles
+      </h2>
+      <div class="references-grid">
+        <div class="reference-item">
+          <h3 class="reference-name">Mr. Gédeon NSINSI</h3>
+          <p class="reference-title">Sécretaire géneral Administratif - Honu University</p>
+          <p class="reference-desc">
+            Encadreur lors du stage académique 2023-2024. Peut témoigner de mes compétences en gestion administrative,
+            saisie comptable et mon professionnalisme.
+          </p>
+          <p class="reference-contact">
+            <i class="fa-solid fa-phone"></i> <a href="tel:+243898003712" style="color: inherit; text-decoration: none;">+243 898 003 712</a>
+          </p>
+        </div>
+
+        <div class="reference-item">
+          <h3 class="reference-name">Mr. Pavel FASO</h3>
+          <p class="reference-title">Technicien échafaudage - LDC</p>
+          <p class="reference-desc">
+            Personne de référence ayant supervisé mon travail et pouvant attester de mon sérieux, de ma discipline, de
+            mon esprit d’équipe et de ma capacité à respecter les consignes et les délais dans un cadre professionnel
+          </p>
+          <p class="reference-contact">
+            <i class="fa-solid fa-phone"></i> <a href="tel:+243823550176" style="color: inherit; text-decoration: none;">+243 823 550 176</a>
+          </p>
+        </div>
+
+        <div class="reference-item">
+          <h3 class="reference-name">Mr. Dady YAYABUTA</h3>
+          <p class="reference-title">Personnel de cuisine</p>
+          <p class="reference-desc">
+            Professionnel de la restauration qui m’a accompagné et formé aux pratiques du service et de l’accueil. Il
+            peut témoigner de mon comportement professionnel, de ma ponctualité, de ma capacité d’apprentissage et de
+            mon respect des règles de travail.
+          </p>
+          <p class="reference-contact">
+            <i class="fa-solid fa-phone"></i> <a href="tel:+243819080051" style="color: inherit; text-decoration: none;">+243 819 080 051</a>
+          </p>
+        </div>
+
+        <div class="reference-item">
+          <h3 class="reference-name">Prof. Joel MUKENDI</h3>
+          <p class="reference-title">Formateur Principal - INPP Kinshasa</p>
+          <p class="reference-desc">
+            Instructeur principal Web Master 2023. Peut attester de mes compétences techniques en HTML5, CSS3,
+            JavaScript, UI/UX et responsive design.
+          </p>
+          <p class="reference-contact">
+            <i class="fa-solid fa-phone"></i> <a href="tel:+243823324304" style="color: inherit; text-decoration: none;">+243 823 324 304</a>
+          </p>
+        </div>
+
+        <div class="reference-item">
+          <h3 class="reference-name">Lettre de Motivation</h3>
+          <p class="reference-title">Disponible sur demande</p>
+          <p class="reference-desc">
+            Lettre de motivation personnalisée adaptée à chaque offre d'emploi.
+            N'hésitez pas à me contacter pour l'obtenir.
+          </p>
+          <p class="reference-contact">
+            <i class="fa-solid fa-envelope"></i> <a href="mailto:luangesamuel23@gmail.com" style="color: inherit; text-decoration: none;">luangesamuel23@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PIED DE PAGE -->
+    <footer class="cv-footer text-center text-white p-4">
+      <p class="mb-0">
+        <i class="fa-solid fa-circle-check"></i> Samuel Luange |
+        <i class="fa-solid fa-phone"></i> <a href="tel:+243846915132" style="color: inherit; text-decoration: none;">+243 846 915 132</a> - <a href="tel:+243970338743" style="color: inherit; text-decoration: none;">970 338 743</a> |
+        <i class="fa-solid fa-envelope"></i> <a href="mailto:luangesamuel23@gmail.com" style="color: inherit; text-decoration: none;">luangesamuel23@gmail.com</a>
+      </p>
+      <p class="footer-date mt-2 mb-0">
+        <small>CV mis à jour : 21 janvier 2026</small>
+      </p>
+    </footer>
+
+  </div>
+
+  <script>
+    function downloadPDF() {
+      const btn = event.target;
+      const originalText = btn.innerHTML;
+
+      try {
+        // Feedback utilisateur : changement du bouton
+        btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Génération...';
+        btn.disabled = true;
+
+        const element = document.getElementById('cv');
+        const filename = 'CV_Samuel_Luange_' + new Date().getFullYear() + '.pdf';
+
+        // Configuration optimisée pour PDF professionnel A4
+        const options = {
+          margin: [15, 15, 15, 15],
+          filename: filename,
+          image: {
+            type: 'jpeg',
+            quality: 0.99
+          },
+          html2canvas: {
+            scale: 2,
+            useCORS: true,
+            logging: false,
+            backgroundColor: '#ffffff',
+            windowHeight: element.scrollHeight,
+            windowWidth: 210,
+            imageTimeout: 15000,
+            imageMaxRetries: 2
+          },
+          jsPDF: {
+            unit: 'mm',
+            format: 'a4',
+            orientation: 'portrait',
+            compress: true,
+            precision: 10,
+            putOnlyUsedFonts: true,
+            compress: true
+          },
+          pagebreak: {
+            mode: ['avoid-all', 'css', 'legacy'],
+            before: '.section',
+            after: '.section'
+          }
+        };
+
+        // Génération du PDF avec gestion d'erreur
+        html2pdf()
+          .set(options)
+          .from(element)
+          .toPdf()
+          .get('pdf')
+          .then(function (pdf) {
+            // Ajouter des métadonnées
+            pdf.setProperties({
+              title: 'CV - Samuel Luange',
+              subject: 'Curriculum Vitae',
+              author: 'Samuel Luange',
+              keywords: 'CV, Professionnel, Polyvalent',
+              creator: 'CV Generator'
+            });
+
+            // Télécharger le PDF
+            pdf.save(filename);
+
+            // Restaurer le bouton
+            setTimeout(function () {
+              btn.innerHTML = originalText;
+              btn.disabled = false;
+            }, 1000);
+          })
+          .catch(function (error) {
+            console.error('Erreur génération PDF:', error);
+            btn.innerHTML = '<i class="fa-solid fa-exclamation-triangle"></i> Erreur';
+            setTimeout(function () {
+              btn.innerHTML = originalText;
+              btn.disabled = false;
+            }, 2000);
+          });
+
+      } catch (error) {
+        console.error('Erreur:', error);
+        btn.innerHTML = '<i class="fa-solid fa-exclamation-triangle"></i> Erreur';
+        btn.disabled = false;
+      }
+    }
+
+    // Fonction pour impression optimisée
+    function printCV() {
+      const btn = event.target;
+      btn.disabled = true;
+
+      // Attendre le rendu
+      setTimeout(function () {
+        window.print();
+        btn.disabled = false;
+      }, 300);
+    }
+  </script>
+
+</body>
+
+</html>
